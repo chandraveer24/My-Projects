@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.PA.Pojo.Student" table="student" catalog="javatraining">
+
+		<meta attribute="class-description">
+			This class contains the employee detail.
+		</meta>
+
+		<id name="sid" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+
+		<property name="name" type="string">
+			<column name="name" length="45"></column>
+		</property>
+		
+		<property name="marks" type="int">
+			<column name="marks" length="11"></column>
+		</property>
+
+	</class>
+</hibernate-mapping>
