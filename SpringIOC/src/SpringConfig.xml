@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	 <bean id="restaurantBean" class="org.PA.SpringBasic.Restaurant"/>
+
+	<bean id="employeeBean" class="org.PA.Injecting.Setter.Emoloyee">
+		<property name="id" value="6"></property>
+		<property name="name" value="Chandraveer"></property>
+		<property name="address" value="PA"></property>
+	</bean>
+	
+	<bean id="studentBean" class="org.PA.Injecting.Constructor.Student">
+		<constructor-arg name="marks" value="90"></constructor-arg>
+	</bean>
+	
+	<bean id="circle" class="org.PA.Shape.Circle"/>
+	
+	<bean id="rectangle" class="org.PA.Shape.Rectangle"/>
+	
+	<bean id="triangle" class="org.PA.Shape.Triangle"/>
+	
+	<bean id="shapeBean" class="org.PA.Shape.ShapeCreator">
+		<property name="shape" ref="circle"></property>
+	</bean>
+	
+	<bean id="restBeanCollection" class="org.PA.Collections.Restaurant">
+		<property name="waiters">
+		<list>
+			<value>Chandraveer</value>
+			<value>Abhinav</value>
+			<value>Mounika</value>
+			<value>Lekha</value>
+			<value>Rahul</value>
+			<value>Venkat</value>
+			<value>Harsha</value>
+		</list>
+		</property>
+	</bean>
+</beans>
