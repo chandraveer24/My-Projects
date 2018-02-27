@@ -1,0 +1,11 @@
+1. Right click on project Run as--> Spring Boot App
+
+Next
+
+2. Open postman select GET
+http://localhost:8080/restWs/services/patientService/patients
+(For Retrieving all patients)
+
+3. Select GET
+http://localhost:8080/restWs/services/patientService/patient/123
+(For Retrieving Students Based on ID)
