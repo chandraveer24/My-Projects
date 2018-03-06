@@ -14,7 +14,7 @@
 	<body>
 		<h1>Enter Last Name To Search All The Scholars</h1>
 		 
-		<form:form modelAttribute="lastName" method="POST" action="${pageContext.request.contextPath}/scholar/json/lnameSearch">
+		<form:form modelAttribute="lastName" method="POST" action="${pageContext.request.contextPath}/scholar/lnameSearch1">
 			<table>
 				<tbody>
 					<tr>

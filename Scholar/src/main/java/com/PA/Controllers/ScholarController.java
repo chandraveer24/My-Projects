@@ -76,15 +76,15 @@ class ScholarController {
 		return mv;
 	}
 	
-	@RequestMapping(value="/search", method=RequestMethod.GET)
+	@RequestMapping(value="/search1", method=RequestMethod.GET)
 	public ModelAndView search()
 	{
-		ModelAndView mv=new ModelAndView("search");
+		ModelAndView mv=new ModelAndView("search1");
 		mv.addObject("lastName", new Scholar());
 		return mv;
 	}
 	
-	@RequestMapping(value="/lnameSearch", method=RequestMethod.POST)
+	@RequestMapping(value="/lnameSearch1", method=RequestMethod.POST)
 	public ModelAndView searchByLastName(@ModelAttribute Scholar scholar)
 	{
 		ModelAndView mv=new ModelAndView("searchByLastName");
