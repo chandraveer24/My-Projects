@@ -34,7 +34,7 @@ public class JacksonController {
 	@RequestMapping(value="/lnameSearch", method=RequestMethod.POST)
 	public @ResponseBody String getShopInJSON(@ModelAttribute Scholar scholar) {
 
-		List<Scholar> scholars=new ArrayList<>();
+		List<Scholar> scholars=new ArrayList<Scholar>();
 		String lastName = scholar.getLastName();
 		scholars = scholarService.loadByLastName(lastName);
 		StringBuilder string = new StringBuilder();
